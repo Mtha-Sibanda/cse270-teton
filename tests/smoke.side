@@ -1,0 +1,510 @@
+{
+  "id": "06a4a9f0-eb1c-4293-a84f-b0edbaf0ee0d",
+  "version": "2.0",
+  "name": "Smoke Test",
+  "url": "http://127.0.0.1:5500/teton/1.6/",
+  "tests": [{
+    "id": "62891881-2013-4af2-8efd-9d326ddcc1ac",
+    "name": "Name and Logo Test",
+    "commands": [{
+      "id": "0b31e5bc-6f4f-451a-9cb6-1accdcb4d24d",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/teton/1.6/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4dded491-64e2-4b72-97a2-3ae24566ce2c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1290x859",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "414cf104-adef-4881-96d0-ea4f25a92468",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header-logo img",
+      "targets": [
+        ["css=.header-logo img", "css:finder"],
+        ["xpath=//img[@alt='Teton Chamber of Commerce Logo']", "xpath:img"],
+        ["xpath=//div[@id='content']/header/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cde35e3-8a05-4065-a5fc-c5526a92ba7e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.header-title > h2",
+      "targets": [
+        ["css=.header-title > h2", "css:finder"],
+        ["xpath=//div[@id='content']/header/div/div[2]/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Chamber of Commerce')]", "xpath:innerText"]
+      ],
+      "value": "Chamber of Commerce"
+    }, {
+      "id": "22e5dbbe-f8af-42ad-9c2f-f7fbc0f3e8a8",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Teton Idaho CoC",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bc24b92-b29d-459e-917c-f4eda74417aa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.header-title > h1",
+      "targets": [
+        ["css=.header-title > h1", "css:finder"],
+        ["xpath=//div[@id='content']/header/div/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Teton Idaho')]", "xpath:innerText"]
+      ],
+      "value": "Teton Idaho"
+    }]
+  }, {
+    "id": "970385ee-a942-43e2-8118-7e14be28896f",
+    "name": "Test 2 - Home Page",
+    "commands": [{
+      "id": "519b47c8-e28a-42d4-9add-2ca291e06008",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/teton/1.6/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31dee158-bd7a-454d-bb7f-5b9c9f7b3143",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1290x859",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0919016-375c-423b-b949-8e6213fb6840",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.spotlight1 img",
+      "targets": [
+        ["css=.spotlight1 img", "css:finder"],
+        ["xpath=//div[@id='content']/main/section[5]/div/p/a/img", "xpath:idRelative"],
+        ["xpath=//p/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94b68867-1196-4f07-bbce-97ad68f2eb3d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.spotlight2 img",
+      "targets": [
+        ["css=.spotlight2 img", "css:finder"],
+        ["xpath=//div[@id='content']/main/section[5]/div[2]/p/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/p/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "674923dd-c422-45a3-a247-97828e414883",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Join Us!",
+      "targets": [
+        ["linkText=Join Us!", "linkText"],
+        ["css=.a-button:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Join Us!')]", "xpath:link"],
+        ["xpath=//div[@id='content']/main/section[6]/p[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'join.html')])[3]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Join Us!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a18a066-85e0-4c65-84b9-1996b7df2431",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Join Us!",
+      "targets": [
+        ["linkText=Join Us!", "linkText"],
+        ["css=.a-button:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Join Us!')]", "xpath:link"],
+        ["xpath=//div[@id='content']/main/section[6]/p[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'join.html')])[3]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Join Us!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "881f77df-fb4d-4a1d-82cd-c51339ea2033",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=fname",
+      "targets": [
+        ["name=fname", "name"],
+        ["css=.myinput:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='fname']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/main/section/form/fieldset/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5fe06657-fa4d-4229-b78d-a7ff28f0edf4",
+    "name": "Directory Page",
+    "commands": [{
+      "id": "fa1d9c5a-da41-469a-8a40-624eeb5ea421",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/teton/1.6/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "886904ab-81ca-422b-a1b3-3310541d4632",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1290x859",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4c7d7e9-9796-467b-b490-a52663e92a8a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Directory",
+      "targets": [
+        ["linkText=Directory", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Directory')]", "xpath:link"],
+        ["xpath=//div[@id='content']/header/nav/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'directory.html')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Directory')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72911054-5b41-4e2a-a1b2-99b02bfc5d57",
+      "comment": "",
+      "command": "click",
+      "target": "id=directory-grid",
+      "targets": [
+        ["id=directory-grid", "id"],
+        ["css=#directory-grid", "css:finder"],
+        ["xpath=//button[@id='directory-grid']", "xpath:attributes"],
+        ["xpath=//div[@id='directory-selector']/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'GRID')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea0be976-da11-436e-a95c-3c028e4bb716",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.gold-member:nth-child(9) > img",
+      "targets": [
+        ["css=.gold-member:nth-child(9) > img", "css:finder"],
+        ["xpath=//div[@id='directory-data']/section[9]/img", "xpath:idRelative"],
+        ["xpath=//section[9]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ba156cb-b03e-4095-b5a0-137c63ef758d",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=directory-list",
+      "targets": [
+        ["id=directory-list", "id"],
+        ["css=#directory-list", "css:finder"],
+        ["xpath=//button[@id='directory-list']", "xpath:attributes"],
+        ["xpath=//div[@id='directory-selector']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'LIST')]", "xpath:innerText"]
+      ],
+      "value": "34.3359375,32.8046875"
+    }, {
+      "id": "30f179d9-3417-4a88-a05e-a5f9b1535397",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=directory-list",
+      "targets": [
+        ["id=directory-list", "id"],
+        ["css=#directory-list", "css:finder"],
+        ["xpath=//button[@id='directory-list']", "xpath:attributes"],
+        ["xpath=//div[@id='directory-selector']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'LIST')]", "xpath:innerText"]
+      ],
+      "value": "34.3359375,32.8046875"
+    }, {
+      "id": "397d4266-53c7-4055-ae2b-81c5812164b7",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=directory-list",
+      "targets": [
+        ["id=directory-list", "id"],
+        ["css=#directory-list", "css:finder"],
+        ["xpath=//button[@id='directory-list']", "xpath:attributes"],
+        ["xpath=//div[@id='directory-selector']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'LIST')]", "xpath:innerText"]
+      ],
+      "value": "34.3359375,32.8046875"
+    }, {
+      "id": "03a4aa73-0da4-428c-92b1-93bc2109f06b",
+      "comment": "",
+      "command": "click",
+      "target": "id=directory-list",
+      "targets": [
+        ["id=directory-list", "id"],
+        ["css=#directory-list", "css:finder"],
+        ["xpath=//button[@id='directory-list']", "xpath:attributes"],
+        ["xpath=//div[@id='directory-selector']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'LIST')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c660ea40-19a1-4512-934a-5f9e7c45f390",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.gold-member:nth-child(9) > p:nth-child(2)",
+      "targets": [
+        ["css=.gold-member:nth-child(9) > p:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='directory-data']/section[9]/p", "xpath:idRelative"],
+        ["xpath=//section[9]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Teton Turf and Tree')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b7e3883f-fbec-4ba9-9b46-3487b08ff341",
+    "name": "Join Page",
+    "commands": [{
+      "id": "f75ff008-ca9a-43a8-9d6d-d8abab34752a",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/teton/1.6/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0ecf69e-6237-44ad-9939-345339ccc1cd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1290x859",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1372587-8da1-43bb-a757-c39fcd3faca9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Join",
+      "targets": [
+        ["linkText=Join", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Join')]", "xpath:link"],
+        ["xpath=//div[@id='content']/header/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'join.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Join')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "532c241e-2ecd-433d-b005-d5c08043fcfe",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=fname",
+      "targets": [
+        ["name=fname", "name"],
+        ["css=.myinput:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='fname']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/main/section/form/fieldset/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e83199e9-c433-42c3-92b2-81541b629e7b",
+      "comment": "",
+      "command": "type",
+      "target": "name=fname",
+      "targets": [
+        ["name=fname", "name"],
+        ["css=.myinput:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='fname']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/main/section/form/fieldset/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "SpongeBob"
+    }, {
+      "id": "91fc1e57-12cb-4af8-8eed-6f99db7d4666",
+      "comment": "",
+      "command": "type",
+      "target": "name=lname",
+      "targets": [
+        ["name=lname", "name"],
+        ["css=.myinput:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='lname']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/main/section/form/fieldset/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": "SquarePants"
+    }, {
+      "id": "4cf2d2e2-5ade-4fb5-9de0-764425ec7ba6",
+      "comment": "",
+      "command": "type",
+      "target": "name=bizname",
+      "targets": [
+        ["name=bizname", "name"],
+        ["css=.myinput:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='bizname']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/main/section/form/fieldset/label[3]/input", "xpath:idRelative"],
+        ["xpath=//label[3]/input", "xpath:position"]
+      ],
+      "value": "Krusty Krab"
+    }, {
+      "id": "ecd47356-ed66-429f-8c49-72e48f47813d",
+      "comment": "",
+      "command": "type",
+      "target": "name=biztitle",
+      "targets": [
+        ["name=biztitle", "name"],
+        ["css=.myinput:nth-child(5) > input", "css:finder"],
+        ["xpath=//input[@name='biztitle']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/main/section/form/fieldset/label[4]/input", "xpath:idRelative"],
+        ["xpath=//label[4]/input", "xpath:position"]
+      ],
+      "value": "Head Chef"
+    }, {
+      "id": "a4b27338-0a40-450a-abaf-019835dd45b8",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/main/section/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "437bf290-7c98-4ae9-8e9d-b733ffd062e1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.myinput:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/main/section/form/fieldset/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "16c5cc51-9cf0-4c8e-a6b5-4441b7b48dfe",
+    "name": "Admin Page",
+    "commands": [{
+      "id": "30b00164-0cf0-4a50-af31-2ec9d25ebdef",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/teton/1.6/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63c17a42-31b6-453f-af5f-5710bc9d2cd4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1290x859",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8959eb08-deb3-4a46-8d4b-5f3cc5f1800a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Admin",
+      "targets": [
+        ["linkText=Admin", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Admin')]", "xpath:link"],
+        ["xpath=//div[@id='content']/header/nav/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'admin.html')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c57e1c8-4825-4ea2-968b-b9a669d31af0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/main/section/form/fieldset/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e25f1780-eeeb-4f35-9575-4b01a6567f18",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/main/section/form/fieldset/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "incorrect"
+    }, {
+      "id": "e5c3cd08-1f86-4272-8ea3-4b560d40605d",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/main/section/form/fieldset/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": "username"
+    }, {
+      "id": "b7bc85a7-f8f4-4f59-b7bf-246bc8c4aabd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mysubmit:nth-child(4)",
+      "targets": [
+        ["css=.mysubmit:nth-child(4)", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/main/section/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "239f5c1d-4b3e-44a7-9987-becfb657b4e7",
+      "comment": "",
+      "command": "waitForText",
+      "target": "css=.errorMessage",
+      "targets": [
+        ["css=.errorMessage", "css:finder"],
+        ["xpath=//div[@id='content']/main/section/form/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Invalid username and password.')]", "xpath:innerText"]
+      ],
+      "value": "Invalid username and password."
+    }]
+  }],
+  "suites": [{
+    "id": "6d4e5614-5bf4-42fa-9840-38d65eb58135",
+    "name": "Snoke Test Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["62891881-2013-4af2-8efd-9d326ddcc1ac", "b7e3883f-fbec-4ba9-9b46-3487b08ff341", "16c5cc51-9cf0-4c8e-a6b5-4441b7b48dfe", "5fe06657-fa4d-4229-b78d-a7ff28f0edf4", "970385ee-a942-43e2-8118-7e14be28896f"]
+  }],
+  "urls": ["http://127.0.0.1:5500/teton/1.6/"],
+  "plugins": []
+}
